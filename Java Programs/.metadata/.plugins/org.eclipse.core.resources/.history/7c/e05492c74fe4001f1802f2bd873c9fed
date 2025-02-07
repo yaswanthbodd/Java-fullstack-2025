@@ -1,0 +1,14 @@
+
+public class HelloWorld {
+	
+	public static void main(String[] args) {
+		short s=45;
+		float n=s;
+		System.out.println(n);
+		
+		char c='Y';
+		byte b=c;
+		System.out.println(b);
+	}
+
+}

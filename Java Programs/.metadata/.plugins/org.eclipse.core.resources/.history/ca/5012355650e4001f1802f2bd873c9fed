@@ -1,0 +1,10 @@
+
+public class HelloWorld {
+	
+	public static void main(String[] args) {
+		double b=55.5;
+		byte by=(byte)b;
+		System.out.println(by);
+	}
+
+}

@@ -1,0 +1,14 @@
+
+public class HelloWorld {
+	int m;
+	void pp() {
+		int n;
+		System.out.println(n);
+	}
+	public static void main(String[] args) {
+		HelloWorld h=new HelloWorld();
+		System.out.println(h.m);
+		h.pp();
+	}
+
+}

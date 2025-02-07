@@ -1,0 +1,10 @@
+
+public class HelloWorld {
+	
+	public static void main(String[] args) {
+		short s=45;
+		double n=s;
+		System.out.println(n);
+	}
+
+}
