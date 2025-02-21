@@ -1,5 +1,8 @@
 interface Shape{
 	void draw();
+	default void fill() { // From java 8 version
+		System.out.println("Filling..");
+	}
 }
 class Circle implements Shape{
 	public void draw() { // When implementing interface methods, Overriden method should be public
@@ -12,6 +15,7 @@ public class InterfaceDemo {
 		 // Shape s=new Shape(); // error
 		Shape s=new Circle();
 		s.draw();
+		s.fill();
 	}
 
 }
