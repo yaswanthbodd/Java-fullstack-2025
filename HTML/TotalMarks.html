@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Total Marks</title>
+        <script>
+            function calculateTotalMarks(){
+                let mark1 = parseInt(document.f1.mark1.value);
+                let mark2 = parseInt(document.f1.mark2.value);
+                let mark3 = parseInt(document.f1.mark3.value);
+                let total = mark1 + mark2 + mark3;
+                document.f1.total.value= total;
+            }
+        </script>
+    </head>
+    <body>
+        <form name="f1">
+            Enter Marks in subject 1 : <input type="text" name="mark1" /></br>
+            Enter Marks in subject 2 : <input type="text" name="mark2" /></br>
+            Enter Marks in subject 3 : <input type="text" name="mark3" /></br>
+            Total Marks : <input type="text" name="total" readonly /></br>
+            <input type="button" value="Calculate Marks" onclick="calculateTotalMarks()" />
+        </form>
+    </body>

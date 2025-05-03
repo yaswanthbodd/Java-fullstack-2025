@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+	<servlet>
+		<servlet-name>ExampleServlet</servlet-name>
+		<servlet-class>ExampleServlet</servlet-class>
+	
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>ExampleServlet</servlet-name>
+		<url-pattern>/hello</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ServletConfigDemo</servlet-name>
+		<servlet-class>ServletConfigDemo</servlet-class>
+		<init-param>
+			<param-name>username</param-name>
+			<param-value>admin</param-value>
+		</init-param>
+		<init-param>
+			<param-name>password</param-name>
+			<param-value>root</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ServletConfigDemo</servlet-name>
+		<url-pattern>/ServletConfigDemo</url-pattern>
+	</servlet-mapping>
+	
+	<context-param>
+		<param-name>collegeName</param-name>
+		<param-value>LBRCE</param-value>
+	</context-param>
+</web-app>
