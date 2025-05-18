@@ -1,0 +1,1 @@
+Emp Name : <%= request.getParameter("empName") %>
