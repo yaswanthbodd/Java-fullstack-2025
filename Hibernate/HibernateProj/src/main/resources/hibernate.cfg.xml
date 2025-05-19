@@ -14,5 +14,6 @@
 		<!-- To use existing table -->
 		<property name="hibernate.hbm2ddl.auto">update</property>
 		<mapping resource="emp.hbm.xml"/>
+		<mapping class="com.hibernate.Product"/>
 	</session-factory>
 </hibernate-configuration>
