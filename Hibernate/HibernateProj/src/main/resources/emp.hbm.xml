@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping SYSTEM "dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.hibernate.Employee" table="EmployeeInfo">
+		<id name="empId" column="empId"/> <!-- Primary Key -->
+		<property name="empName" column="empName"/>
+		<property name="salary" column="emp_salary"/>
+	</class>
+</hibernate-mapping>
