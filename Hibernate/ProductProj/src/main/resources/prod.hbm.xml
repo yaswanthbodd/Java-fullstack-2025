@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping SYSTEM "dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.product.Product" table="ProductInfo">
+		<id name="prodId" column="prodId"/>
+		<property name="prodName" column="prodName"/>
+		<property name="prodPrice" column="prodPrice" />
+	</class>
+</hibernate-mapping>
