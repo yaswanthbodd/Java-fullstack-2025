@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping SYSTEM "dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.student.Student" table="StudentInfo">
+		<id name="studentId" column="studentId" /> <!-- Primary Key ( Unique Values ) -->
+		<property name="studentName" column="studentName"/>
+		<property name="college" column="studentCollege"/>
+		<property name="age" column="studentAge"/>
+	</class>
+</hibernate-mapping>
