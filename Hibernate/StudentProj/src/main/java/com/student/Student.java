@@ -29,5 +29,8 @@ public class Student {
 	public void setAge(float age) {
 		this.age = age;
 	}
+	public String toString() {
+		return studentId+" "+studentName+" "+college+" "+age;
+	}
 	
 }
