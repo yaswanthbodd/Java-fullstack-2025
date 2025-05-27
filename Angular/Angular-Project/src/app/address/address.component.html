@@ -1,0 +1,26 @@
+<div>
+    <h1>Address Component</h1>
+    <h3>{{user.name}}</h3>
+    <p>{{user.address.street}}</p>
+    <p>{{user.address.city}}</p>
+    <p>{{user.address.state}}</p>
+    <p>{{user.address.country}}</p>
+    <!-- <div>
+        <p>Phone:</p>
+        <p>{{user.phone[0]}}</p>
+        <p>{{user.phone[1]}}</p>
+    </div> -->
+    <div>
+        <p>Phone:</p>
+        <p *ngFor = "let phoneNumber of user.phone">
+            {{phoneNumber}}
+        </p>
+    </div>
+
+    <div *ngIf = "user.email.length > 0">
+        <p>Emails: </p>
+        <p *ngFor = "let email of user.email">
+            {{email}}
+        </p>
+    </div>
+</div>
