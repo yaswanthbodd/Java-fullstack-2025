@@ -1,0 +1,24 @@
+<form #customer="ngForm" (ngSubmit)="onClickSubmit(customer.value)">
+    Customer Id : <input type="text" name="cid" [(ngModel)]="cid"/> <br>
+    Customer Name : <input type="text" name="cname" [(ngModel)]="cname"/> <br>
+    Customer Age : <input type="text" name="cage" [(ngModel)]="cage"/> <br>
+    <input type="submit" value="submit"/>
+</form>
+<br>
+<table border>
+    <caption>Customer Details</caption>
+    <tbody>
+        <tr>
+            <th>Customer Id</th>
+            <td>{{cid}}</td>
+        </tr>
+        <tr>
+            <th>Customer Name</th>
+            <td>{{cname}}</td>
+        </tr>
+        <tr>
+            <th>Customer Age</th>
+            <td>{{cage}}</td>
+        </tr>
+    </tbody>
+</table>

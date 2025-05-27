@@ -1,3 +1,12 @@
 <h1>Welcome to {{title}}</h1>
 <h3>Hello {{name}}</h3>
-<app-address></app-address>
+<!-- <app-address></app-address> -->
+<!-- <app-customer></app-customer> -->
+<div style="text-align:center;">
+    <nav>
+        <a routerLink="home">Home</a>
+        <a routerLink="about">About</a>
+        <a routerLink="dashboard">Dashboard</a>
+        <router-outlet></router-outlet>
+    </nav>
+</div>
