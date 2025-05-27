@@ -1,0 +1,18 @@
+<p>This data is comes from the api</p>
+<table border>
+    <caption>Employee Details</caption>
+    <tbody>
+        <tr>
+            <th>Employee Id</th>
+            <th>Employee Name</th>
+            <th>Designation</th>
+            <th>Salary</th>
+        </tr>
+        <tr *ngFor = "let employee of employees"> 
+            <td>{{employee.empId}}</td>
+            <td>{{employee.name}}</td>
+            <td>{{employee.designation}}</td>
+            <td>{{employee.salary}}</td>
+        </tr>
+    </tbody>
+</table>
