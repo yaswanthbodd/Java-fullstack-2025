@@ -11,6 +11,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Data
 public class Users {
+	
 	@Id
 	private int id;
 	private String username;
